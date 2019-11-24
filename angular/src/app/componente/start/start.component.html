@@ -1,0 +1,9 @@
+
+<!-- <button mat-raised-button (click)="gameStart()">Basic</button> -->
+<div class="flex-container">
+  <h1 >SeaBattle</h1>
+
+<button mat-raised-button  (click) = "gameStart()" [disabled] = "vsSearch === true" >Spielen ohne anmeldung</button>
+<div *ngIf="vsSearch === true">Ein Gegner wird gesucht ...</div>
+</div>
+
